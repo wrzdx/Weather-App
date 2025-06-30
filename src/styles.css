@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('./font/Oswald.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: "Oswald", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.light {
+  --text-color: #28282f;
+  --bg-color: #FAFAFA;
+}
+
+body.dark {
+  --text-color: #FAFAFA;
+  --bg-color: #131515;
+}
+
+
+.location-form {
+  display: grid;
+  margin: 8vh auto 0;
+  justify-items: center;
+}
+
+.location-form svg {
+  fill: var(--text-color);
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.location-form input {
+  font: inherit;
+  border: none;
+  text-align: center;
+  color: var(--text-color);
+  background-color: transparent;
+  font-size: 3rem;
+  /* height: 1.2em; */
+}
+
+.location-form input:focus {
+  outline: none;
+}
+
+.location-form input::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.weather-container {
+  display: grid;
+  justify-items: center;
+}
+
+.weather-container img {
+    height: 12.5rem;
+    aspect-ratio: 1;
+}
+
+.weather-container .condition,
+.weather-container .description {
+  font-size: 1.5rem;
+}
+
+.weather-container .temp {
+  font-size: 5rem;
+  line-height: 1.2em;
+  margin-bottom: 1rem;
+  margin-top: -2rem;
+}
+
