@@ -22,8 +22,7 @@ class Weather {
   }
 
   isNight() {
-    const hours = +this.time.slice(0, 2);
-    return hours >= 20 || hours < 6;
+    return this.icon_description.endsWith("night");
   }
 
   getIconPath() {

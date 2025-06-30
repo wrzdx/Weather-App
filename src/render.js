@@ -12,7 +12,7 @@ function createLocationForm() {
   search.type = "text";
   search.id = "location";
   search.placeholder = "Enter a city";
-  search.autocomplete = "off";
+  search.setAttribute("autocomplete", "off");
   
   let lastValidValue = '';
 
