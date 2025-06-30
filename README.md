@@ -12,7 +12,7 @@ A weather forecast application built with JavaScript and Webpack as part of [The
 ## Features
 - Real-time weather data from VisualCrossing API
 - Temperature display in °C/°F toggle
-- Responsive design with dark/light theme
+- Responsive design with dark/light theme (depends on local time)
 - Weather condition icons
 
 ## Key Concepts
@@ -21,7 +21,7 @@ A weather forecast application built with JavaScript and Webpack as part of [The
 ✅ Webpack asset management  
 ✅ Dynamic DOM rendering  
 ✅ Error handling for failed requests  
-✅ Responsive CSS design  
+
 
 ## Core Functionality
 - Get current weather by location
@@ -32,26 +32,19 @@ A weather forecast application built with JavaScript and Webpack as part of [The
 ## How to Run
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/wrzdx/Weather-App.git
 ```
 2. Install dependencies:
 ```bash
 npm install
 ```
-3. Add your API key:
+
+3. Start development server:
 ```bash
-echo "API_KEY=your_visualcrossing_key" > .env
-```
-4. Start development server:
-```bash
-npm run dev
+npm webpack serve
 ```
 5. Open `http://localhost:8080` in your browser
 
-For production build:
-```bash
-npm run build
-```
 
 ## API Reference
 Uses [VisualCrossing Weather API](https://www.visualcrossing.com/weather-api)
