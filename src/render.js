@@ -16,18 +16,29 @@ function createLocationForm() {
   
   let lastValidValue = '';
 
+  const loader = document.createElement("div");
+  loader.className = "loader";
+  form.appendChild(loader);
+
+
+  
+
   const handler = async (e) => {    
     e.preventDefault();
     const city = search.value.trim();
+    loader.classList.add("active");
+    search.disabled = true;
     
     try {
       const weather = await getWeather(city);
       renderWeather(weather);
       lastValidValue = city;
     } catch (error) {
-      // alert("City not found");
       console.error("Error fetching weather data:", error);
       search.value = lastValidValue;
+    } finally {
+      loader.classList.remove("active");
+      search.disabled = false;
     }
   };
 
