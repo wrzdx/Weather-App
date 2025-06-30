@@ -7,7 +7,7 @@ A weather forecast application built with JavaScript and Webpack as part of [The
 ![Weather App Preview 1](./preview1.png)  
 ![Weather App Preview 2](./preview2.png)  
 
-**Live Demo**: [Your GitHub Pages Link Here](https://wrzdx.github.io/Weather-App/)
+**Live Demo**: [Weather App](https://wrzdx.github.io/Weather-App/)
 
 ## Features
 - Real-time weather data from VisualCrossing API
