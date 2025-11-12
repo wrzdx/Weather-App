@@ -1,6 +1,6 @@
 # Weather Application
 
-A weather forecast application built with JavaScript and Webpack as part of [The Odin Project](https://www.theodinproject.com/) curriculum.
+A responsive weather forecast app that displays real-time conditions and temperature data using JavaScript, Webpack, and the VisualCrossing API.[The Odin Project](https://www.theodinproject.com/).
 
 ## Preview
 
