@@ -1,6 +1,6 @@
 # Weather Application
 
-A responsive weather forecast app that displays real-time conditions and temperature data using JavaScript, Webpack, and the VisualCrossing API.[The Odin Project](https://www.theodinproject.com/).
+A responsive weather forecast app that displays real-time conditions and temperature data using JavaScript, Webpack, and the VisualCrossing API. [The Odin Project](https://www.theodinproject.com/).
 
 ## Preview
 
